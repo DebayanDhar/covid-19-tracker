@@ -28,7 +28,7 @@ const options = {
             {
                 type: "time",
                 time: {
-                    format: "DD/MM/YY",
+                    format: "MM/DD/YY",
                     tooltipFormat: "ll",
                 },
             },
@@ -94,8 +94,8 @@ function LineGraph({ country,casesType = "cases" })
                 options={options}
                 data ={{
                     datasets: [{
-                        backgroundColor : "rgba(204, 16, 52, 0.5)",
-                        borderColor : "#CC1034",
+                        backgroundColor : casesType === 'recovered' ? "rgba(125,215,29,0.5)" : "rgba(204, 16, 52, 0.5)",
+                        borderColor : casesType === 'recovered' ? "#7dd71d" : "#CC1034",
                         data: data,
                     }]
                 }}

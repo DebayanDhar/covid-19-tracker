@@ -49,11 +49,7 @@ body{
   flex-direction: column;
   flex-grow: 1;
 }
-.app__right > .app__information > .app__graph
-{
-  flex-grow: 1;
-}
-canvas
+.app__graph
 {
   flex-grow: 1;
 }
